@@ -1,0 +1,33 @@
+.container {
+    padding: 0 2rem;
+    min-height: 85vh;
+}
+
+.main {
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 3rem;
+}
+
+.blogs {
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.blogItem {
+    margin-top: 2rem;
+}
+
+.blogItem h3 {
+    cursor: pointer;
+}
+
+h2.secondaryHeading {
+    text-align: center;
+    padding-top: 20px;
+}
