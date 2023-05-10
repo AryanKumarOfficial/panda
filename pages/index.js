@@ -3,26 +3,25 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
-import Dumb from '@/components/dumb'
-// different styles can be imported as different object in nextjs as a component
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  // styled jsx is a way of writing css in a particular component
 
-  console.log(styles);
   return <>
     <div className={styles.container}>
-      <Dumb />
-      {/* applying internal css 
-        component level scope by default
-      */}
       <style jsx>
         {`
-    .mySpan{
-      color:red;
-    }
+      h2{
+        font-size:38px;
+      }
+      h3{
+        font-size:28px;
+        margin-bottom:2rem;
+      }
+      .blogs{
+        padding-bottom:3rem;
+      }
     `}
       </style>
       <Head>
@@ -43,7 +42,10 @@ export default function Home() {
         <h1 className={styles.title}>
           <span className="mySpan dummy">Hunting Coder</span>
         </h1>
+        <div className={styles.imgWrap}>
 
+          <Image className={styles.myImg} src='/coder.jpg' alt='coder' width={518} height={345} priority={true} />
+        </div>
         <p className={styles.description}>
           A blog for hunting coders by a hunting coder
         </p>
@@ -65,18 +67,9 @@ export default function Home() {
         </div>
       </main>
 
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
+      <footer className={styles.footer}>
+
+      </footer>
     </div>
   </>;
 }
