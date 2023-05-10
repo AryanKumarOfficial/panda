@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Link from 'next/link'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -17,6 +15,7 @@ export default function Home() {
       }
       h3{
         font-size:28px;
+
         margin-bottom:2rem;
       }
       .blogs{
@@ -30,14 +29,7 @@ export default function Home() {
         <meta name="keywords" content="next, hunting coder, hunting blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className={styles.mainnav}>
-        <ul>
-          <Link href='/'><li>Home</li></Link>
-          <Link href='/blogs'><li>Blogs</li></Link>
-          <Link href='/about'><li>About</li></Link >
-          <Link href='/contact'><li>Contacts</li></Link>
-        </ul>
-      </nav>
+
       <main className={styles.main}>
         <h1 className={styles.title}>
           <span className="mySpan dummy">Hunting Coder</span>
@@ -67,9 +59,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
 
-      </footer>
     </div>
   </>;
 }
