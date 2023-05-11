@@ -17,24 +17,11 @@ const Blogs = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <style jsx>
-          {`
-        h2 {
-          font-size: 38px;
-          font-size: 28px;
-        
-        margin-bottom: 2rem;
-        }
-        .blogItemP{
-          max-width:45vw;
-        } 
-    `}
-        </style>
         <div className={styles.blogs}>
           {blogs.map((item) => {
             return <div className={styles.blogItem} key={item.s}>
               <Link href={`blogpost/${item.slug}`}>
-                <h2 >{item.title} </h2>
+                <h3 className={styles.secondaryHeading}  >{item.title} </h3>
               </Link>
               <p className='blogItemP'>{item.content.substring(0, 120) + `...`}</p>
             </div>
