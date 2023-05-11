@@ -16,18 +16,14 @@
 
 .blogs {
     padding-bottom: 3rem;
-    text-align: center;
 }
 
 .blogItem {
     margin-top: 2rem;
 }
 
-.blogItem h3 {
-    cursor: pointer;
-}
+
 
 h2.secondaryHeading {
-    text-align: center;
     padding-top: 20px;
 }
