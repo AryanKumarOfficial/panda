@@ -2,7 +2,10 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import styles from '@/styles/blogPost.module.css'
 
+// step 1: find the file according to the slug
+// step 2: populate them inside the page
 const Slug = () => {
+
     const router = useRouter()
     const { slug } = router.query
     return (
