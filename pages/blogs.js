@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import styles from '@/styles/Blog.module.css'
 import Link from 'next/link'
-const Blogs = () => {
+const Blogs = (props) => {
+  console.log(props);
   // Step 1: collect all the data from blogdata directory
   // Step 2: Itrate through them and display them
-  const [blogs, setBlogs] = useState([])
-  useEffect(() => {
-    fetch('http://localhost:3000/api/blogs').then((a) => {
-      return a.json();
-    })
-      .then((parsed) => {
-        setBlogs(parsed)
-      })
-  }, []
-  )
+  const [blogs, setBlogs] = useState(props.data)
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/api/blogs').then((a) => {
+  //     return a.json();
+  //   })
+  //     .then((parsed) => {
+  //       setBlogs(parsed)
+  //     })
+  // }, []
+  // )
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -31,6 +32,17 @@ const Blogs = () => {
       </main>
     </div>
   )
+};
+/*
+  logic to generate server side rendering to help bots to read our data 
+  static html file is sent on every request from client and updates upon the changes in the content 
+*/
+export async function getServerSideProps(context) {
+  let response = await fetch('http://localhost:3000/api/blogs');
+  let data = await response.json();
+  return {
+    props: { data },
+  }
 }
 
 export default Blogs        
