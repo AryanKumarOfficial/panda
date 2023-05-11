@@ -8,6 +8,9 @@ import * as fs from 'fs'
 // step 2: populate them inside the page
 const Slug = (props) => {
     const [blog, setBlog] = useState(props.data)
+    function createMarkup(c) {
+        return { __html: c }
+    }
     // useEffect(() => {
     //     if (!router.isReady)
     //         return
@@ -33,8 +36,8 @@ const Slug = (props) => {
                 </style>
                 <h1 > {blog && blog.title} </h1>
                 <hr />
-                <p className={styles.content}>{blog && blog.content}
-                </p>
+                {blog && <div dangerouslySetInnerHTML={createMarkup(blog.content)}></div>}
+
             </main>
 
         </div>

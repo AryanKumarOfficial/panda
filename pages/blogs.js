@@ -3,6 +3,7 @@ import styles from '@/styles/Blog.module.css'
 import Link from 'next/link'
 import * as fs from 'fs'
 const Blogs = (props) => {
+  
   // console.log(props);
   // Step 1: collect all the data from blogdata directory
   // Step 2: Itrate through them and display them
@@ -25,7 +26,7 @@ const Blogs = (props) => {
               <Link href={`blogpost/${item.slug}`}>
                 <h3 className={styles.secondaryHeading}  >{item.title} </h3>
               </Link>
-              <p className='blogItemP'>{item.content.substring(0, 120) + `...`}</p>
+              <p  className='blogItemP'>{item.metaDesc}</p>
             </div>
           })}
 
