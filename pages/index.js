@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
@@ -36,7 +36,8 @@ export default function Home() {
         </h1>
         <div className={styles.imgWrap}>
 
-          <Image className={styles.myImg} src='/coder.jpg' alt='coder' width={518} height={345} priority={true} />
+          {/* <Image className={styles.myImg} src='/coder.jpg' alt='coder' width={518} height={345} priority={true} /> */}
+          <img src='/coder.jpg' alt='coder' width={518} height={345} className={styles.myImg} />
         </div>
         <p className={styles.description}>
           A blog for hunting coders by a hunting coder
