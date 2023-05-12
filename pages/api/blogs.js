@@ -4,6 +4,7 @@ import path from 'path'
 export default async function handler(req, res) {
 
   let data = await fs.promises.readdir('blogdata')
+  data = data.slice(0, parseInt(req.query.count))
   let myFile;
   let allBlogs = []
   for (let index = 0; index < data.length; index++) {

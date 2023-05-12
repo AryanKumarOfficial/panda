@@ -9,16 +9,16 @@ const Footer = () => {
             <footer className={styles.footer} style={{backgroundColor: "rgba(0, 0, 0, 0.05)"}}>
                <div>
                  <span> Contact Us</span>
-                <a target='_blank' href="https://www.instagram.com/jivit.prani"><i class="fa-brands fa-instagram"></i></a>
-                <a target='_blank' href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-                <a target='_blank' href="https://www.linkedin.com/in/aryan-kumar-8550b71a1/"><i class="fa-brands fa-linkedin"></i></a>
-                <a target='_blank' href="https://www.twitter.com/@AryanKu20348088"><i class="fa-brands fa-twitter"></i></a>
-                <a target='_blank' href="https://www.github.com/Aryan-ji"><i class="fa-brands fa-github"></i></a>
+                <a target='_blank' href="https://www.instagram.com/jivit.prani"><i className="fa-brands fa-instagram"></i></a>
+                <a target='_blank' href="https://www.facebook.com"><i className="fa-brands fa-facebook"></i></a>
+                <a target='_blank' href="https://www.linkedin.com/in/aryan-kumar-8550b71a1/"><i className="fa-brands fa-linkedin"></i></a>
+                <a target='_blank' href="https://www.twitter.com/@AryanKu20348088"><i className="fa-brands fa-twitter"></i></a>
+                <a target='_blank' href="https://www.github.com/Aryan-ji"><i className="fa-brands fa-github"></i></a>
                 </div>
 
-                <div class={styles.copy} >
+                <div className={styles.copy} >
                     ©2023 Copyright : 
-                    <a class="text-reset fw-bold" href="https://github.com/Aryan-ji"> HuntingCoder</a>
+                    <a className="text-reset fw-bold" href="https://github.com/Aryan-ji"> HuntingCoder</a>
                 </div>
             </footer>
         </>
