@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import styles from '@/styles/Contact.module.css'
 import Head from 'next/head'
 import Script from 'next/script'
@@ -12,7 +12,6 @@ const About = () => {
     const [desc, setDesc] = useState('')
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(name, email, phone, desc);
         let data = { name, email, phone, desc }
         fetch('http://localhost:3000/api/contact', {
             method: "POST",
@@ -21,7 +20,6 @@ const About = () => {
         },)
             .then(response => response.json())
             .then(data => {
-                console.log("success", data);
                 setName('')
                 setEmail('')
                 setPhone('')
@@ -29,7 +27,6 @@ const About = () => {
                 alert("form submited")
             })
             .catch((error) => {
-                console.error('Error', error);
                 alert(error)
             })
 
@@ -85,20 +82,6 @@ const About = () => {
                 </form >
             </div>
         </>
-        //   <main className={styles.main}>
-        //     <h1 className={styles.mainHead}>Contact Us</h1>
-        //     <form method='POST' className={styles.contactForm}>
-        //       <label htmlFor="name">Enter Your Name</label>
-        //       <input type="text" id='name' name='name' />
-        //       <label htmlFor="email">Enter Email</label>
-        //       <input type="email" id='email' name='email' />
-        //       <label htmlFor="phone">Enter Your Phone</label>
-        //       <input type="phone" id='phone' name='phone' />
-        //       <label htmlFor="desc" >Comment</label>
-        //       <textarea id='desc' name='desc' />
-        //       <button className={styles.btn} type="submit">Submit</button>
-        //     </form>
-        //   </main>
     )
 }
 

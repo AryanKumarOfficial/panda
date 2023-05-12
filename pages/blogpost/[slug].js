@@ -1,29 +1,13 @@
-// import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import styles from '@/styles/blogPost.module.css'
 import * as fs from 'fs'
 
 
-// step 1: find the file according to the slug
-// step 2: populate them inside the page
 const Slug = (props) => {
     const [blog, setBlog] = useState(props.data)
     function createMarkup(c) {
         return { __html: c }
     }
-    // useEffect(() => {
-    //     if (!router.isReady)
-    //         return
-    //     const { slug } = router.query
-    //     fetch(`http://localhost:3000/api/getblogs?slug=${slug}`).then((a) => {
-    //         return a.json();
-    //     })
-    //         .then((parsed) => {
-    //             setBlog(parsed)
-    //         })
-    // }
-    //     , [router.isReady]
-    // )
 
     return (
         <div className={styles.container}>
@@ -44,11 +28,6 @@ const Slug = (props) => {
     )
 }
 
-// creates static side rendering
-// doesn't update on updating the data content
-// logic is not active during the rendering
-// static file is generated in a out dir.
-
 export async function getStaticPaths(context) {
     return {
         paths: [
@@ -59,12 +38,11 @@ export async function getStaticPaths(context) {
             { params: { slug: "how-to-learn-reactjs" } },
             { params: { slug: "how-to-learn-web-dev" } },
         ],
-        fallback: true // false for blocking
+        fallback: true
     }
 }
 
 export async function getStaticProps(context) {
-    // console.log(context);
     const { slug } = context.params
     let data = await fs.promises.readFile(`blogdata/${slug}.json`, 'utf-8')
 
@@ -73,20 +51,5 @@ export async function getStaticProps(context) {
     }
 
 }
-
-
-
-
-// export async function getServerSideProps(context) {
-//     console.log()
-//     const slug = context.query.slug
-//     let response = await fetch(`http://localhost:3000/api/getblogs?slug=${slug}`)
-//     let data = await response.json()
-
-
-//     return {
-//         props: { data },
-//     }
-// }
 
 export default Slug

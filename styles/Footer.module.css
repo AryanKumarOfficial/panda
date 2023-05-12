@@ -9,12 +9,6 @@
   flex-direction: column;
 }
 
-/* .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-} */
 
 .footer span {
   font-weight: bold;
@@ -25,9 +19,6 @@
   margin: 0rem 5px;
 }
 
-/* .footer i:hover {
-  color: red;
-} */
 
 .footer .copy {
   min-width: 100vw;
