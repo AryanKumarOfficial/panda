@@ -1,48 +1,18 @@
-.main {
-    margin-top: 3rem;
+.container {
+    color: rebeccapurple;
+    max-width: 45vw;
+    margin: 45px auto;
 }
 
-.mainHead {
+
+.container h1 {
     text-align: center;
 }
 
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
+.container h2 {
+    padding-top: 1rem;
 }
 
-.contactForm input {
-    margin: 10px;
-    width: 15rem;
-    height: 1.8rem;
-}
-
-.contactForm textarea {
-    margin: 10px;
-    width: 15rem;
-    height: 1.8rem;
-    width: 243px;
-    height: 119px;
-}
-
-.contactForm label {
-    /* margin: 10px; */
-    width: 15rem;
-}
-
-.contactForm input::placeholder {
-    text-align: center;
-}
-
-.btn {
-    border-radius: 8px;
-    padding: 5px 15px;
-    margin: 10px 10px;
-    background-color: blue;
-    border: none;
-    cursor: pointer;
+.container p {
+    padding-top: 1rem;
 }

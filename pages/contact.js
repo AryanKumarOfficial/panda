@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import styles from '@/styles/About.module.css'
+import styles from '@/styles/Contact.module.css'
 import Head from 'next/head'
 import Script from 'next/script'
 

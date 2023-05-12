@@ -1,0 +1,48 @@
+.main {
+    margin-top: 3rem;
+}
+
+.mainHead {
+    text-align: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactForm input {
+    margin: 10px;
+    width: 15rem;
+    height: 1.8rem;
+}
+
+.contactForm textarea {
+    margin: 10px;
+    width: 15rem;
+    height: 1.8rem;
+    width: 243px;
+    height: 119px;
+}
+
+.contactForm label {
+    /* margin: 10px; */
+    width: 15rem;
+}
+
+.contactForm input::placeholder {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin: 10px 10px;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+}
