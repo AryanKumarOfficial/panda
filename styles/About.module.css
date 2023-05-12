@@ -1,6 +1,5 @@
 .container {
-    color: rebeccapurple;
-    max-width: 45vw;
+    max-width: 80vw;
     margin: 45px auto;
 }
 
@@ -11,8 +10,42 @@
 
 .container h2 {
     padding-top: 1rem;
+    margin-top: 45px;
 }
 
 .container p {
     padding-top: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .container h1 {
+        /* letter-spacing: 4px; */
+        position: relative;
+        top: 1rem;
+        font-size: large;
+    }
+
+    .container h2 {
+        font-size: medium;
+    }
+
+    .container p {
+        text-align: justify;
+        word-spacing: -2px;
+    }
+
+    .container p span {
+        padding: 0px 0px;
+        position: relative;
+        bottom: 10px;
+
+    }
+  }
+  .container p ul {
+    padding: 0px 0px;
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+    left: 50px;
+
+  }

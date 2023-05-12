@@ -11,7 +11,7 @@ const Contact = () => {
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum unde eligendi soluta ipsam, dolores illo aspernatur libero aut magni eaque vel minima quaerat in ea consectetur praesentium dolor laudantium temporibus minus expedita dolorem pariatur sequi. Fugiat repudiandae, alias exercitationem veritatis sit odit quae reprehenderit dolorem amet autem qui necessitatibus veniam consectetur quo</p>
       <h2>Services offered</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis magnam asperiores numquam, tempora labore incidunt reiciendis perspiciatis sequi! Tenetur deserunt maxime perferendis quod esse libero soluta. Beatae facere maiores, distinctio modi ipsum commodi veritatis voluptatum!</p>
-      <p>We offer following Services :
+      <p><span>We offer following Services :</span>
         <ul>
           <li>serivce 1</li>
           <li>serivce 2</li>
