@@ -23,10 +23,11 @@ const Blogs = (props) => {
         <div className={styles.blogs}>
           {blogs.map((item) => {
             return <div className={styles.blogItem} key={item.s}>
-              <Link href={`blogpost/${item.slug}`}>
                 <h3 className={styles.secondaryHeading}  >{item.title} </h3>
-              </Link>
               <p  className='blogItemP'>{item.metaDesc}</p>
+              <Link href={`blogpost/${item.slug}`}>
+                <button type="submit" className={styles.btn}>Read more</button>
+              </Link>
             </div>
           })}
 

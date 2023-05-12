@@ -63,7 +63,7 @@ const About = () => {
             <div className="container my-5">
                 <h1 >Contact Us</h1>
 
-                <form method='POST' onSubmit={handleSubmit}>
+                <form className={styles.form} method='POST' onSubmit={handleSubmit}>
                     <div className="form-floating mb-3">
                         <input type="text" className="form-control" id="name" placeholder="name@example.com" required value={name} onChange={handleChange} name='name' />
                         <label htmlFor="name">Name</label>

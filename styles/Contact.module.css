@@ -46,3 +46,7 @@
     border: none;
     cursor: pointer;
 }
+
+.form div label {
+    color: grey;
+}

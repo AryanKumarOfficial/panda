@@ -14,22 +14,22 @@ const Contact = () => {
       <p>We offer following Services :
         <ul>
           <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
-          <li>serivce 1</li>
+          <li>serivce 2</li>
+          <li>serivce 3</li>
+          <li>serivce 4</li>
+          <li>serivce 5</li>
+          <li>serivce 6</li>
+          <li>serivce 7</li>
+          <li>serivce 8</li>
+          <li>serivce 9</li>
+          <li>serivce 10</li>
+          <li>serivce 11</li>
+          <li>serivce 12</li>
+          <li>serivce 13</li>
+          <li>serivce 14</li>
+          <li>serivce 15</li>
         </ul>
-        </p>
+      </p>
       <h2>Contact Us</h2>
 
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt voluptatum sequi neque officia dignissimos quo, sunt illo fugit voluptates illum blanditiis perspiciatis culpa!</p>
